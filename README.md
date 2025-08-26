@@ -31,16 +31,26 @@ Example:
 ________________________________________
 # Commands Used (if any)
 
+
 For PC IP assignment:<br>
 nginx<br>
 CopyEdit<br>
 Desktop > IP Configuration > Enter IP: 192.168.1.2 / Subnet: 255.255.255.0<br>
 For Router Configuration (CLI):<br>
-
+arduino<br>
+CopyEdit<br>
+Router> enable<br>
+Router# configure terminal<br>
+Router(config)# interface FastEthernet0/0<br>
+Router(config-if)# ip address 192.168.1.1 255.255.255.0<br>
+Router(config-if)# no shutdown<br>
 ________________________________________
 # Output (Screenshots / Ping Results)
 
-Insert screenshots showing ping success, configuration, or simulation results.
+<img width="1920" height="1080" alt="Screenshot (202)" src="https://github.com/user-attachments/assets/cf940fec-895d-4050-a7b0-e7747e787b5c" />
+
+<img width="1920" height="1080" alt="Screenshot (203)" src="https://github.com/user-attachments/assets/aca96bc3-868d-4f61-8ea6-0c5b2dfc0b4a" />
+
 ________________________________________
 # Result
 “Successfully configured and verified basic LAN communication between two PCs using a switch in Cisco Packet Tracer.”
